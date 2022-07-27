@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #DCE1E7; }
+
+.container {
+  width: 45rem;
+  height: 95vh;
+  margin: 1rem auto;
+  background-color: #fff; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem; }
+  .header__button {
+    width: 7rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #E82D70, #F06957);
+    background-size: cover;
+    border: none;
+    cursor: pointer; }
+  .header__icon--paw {
+    height: 2rem;
+    fill: #fff; }
+  .header__button--user, .header__button--chat {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    background-color: #fff;
+    margin: 0 1.5rem;
+    border: none;
+    cursor: pointer; }
+  .header__icon--chat, .header__icon--user {
+    height: 100%;
+    fill: #DCE1E7; }
+
+.content {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 1.2rem; }
+  .content__main {
+    width: 98%;
+    height: 65vh;
+    border-radius: 1rem; }
+  .content__badge {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    transform: rotate(320deg); }
+  .content__name {
+    position: absolute;
+    left: 3rem;
+    bottom: 5rem;
+    font-size: 2.2rem; }
+  .content__about {
+    position: absolute;
+    left: 3rem;
+    bottom: 2rem;
+    color: #c4c1bb;
+    font-size: 1.6rem; }
+
+.footer {
+  display: flex;
+  justify-content: center; }
+  .footer__button--like, .footer__button--dislike {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 2rem;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: all .2s; }
+  .footer__button--like:hover {
+    background: rgba(0, 216, 148, 0.2);
+    cursor: pointer; }
+  .footer__button--like:active {
+    transform: scale(0.9); }
+  .footer__button--dislike:hover {
+    background: rgba(232, 45, 112, 0.2);
+    cursor: pointer; }
+  .footer__button--dislike:active {
+    transform: scale(0.9); }
+  .footer__icon--dislike {
+    height: 5rem;
+    width: 5rem;
+    fill: #E82D70; }
+  .footer__icon--like {
+    height: 4rem;
+    width: 4rem;
+    fill: #00D894; }

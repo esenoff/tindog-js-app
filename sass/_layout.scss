@@ -1,0 +1,134 @@
+.container{
+    width: 45rem;
+    height: 95vh;
+    margin: 1rem auto;
+    background-color: $white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    
+    &__button{
+        width: 7rem;
+        height: 3.5rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right bottom, $red, $orange);
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    &__icon--paw{
+        height: 2rem;
+        fill: $white;
+    }
+
+    &__button--user,
+    &__button--chat{
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        background-color: $white;
+        margin: 0 1.5rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__icon--chat,
+    &__icon--user{
+        height: 100%;
+        fill: $grey;
+    }
+}
+
+.content{
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+
+    &__main{
+        width: 98%;
+        height: 65vh;
+        border-radius: 1rem;
+    }
+
+    &__badge{
+        width: 30%;
+        height: 15%;
+        position: absolute;
+        top: 4rem;
+        left: 3rem;
+        transform: rotate(320deg);
+    }
+
+    &__name{
+        position: absolute;
+        left: 3rem;
+        bottom: 5rem;
+        font-size: 2.2rem;
+    }
+
+    &__about{
+        position: absolute;
+        left: 3rem;
+        bottom: 2rem;
+        color: $grey-dark;
+        font-size: 1.6rem;
+    }
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    &__button--like,
+    &__button--dislike{
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 2rem;
+        border: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+        background-color: $white;
+        transition: all .2s;
+    }
+
+    &__button--like:hover{
+        background:rgba($green, 0.2rem);
+        cursor: pointer;
+    }
+    
+    &__button--like:active{
+        transform: scale(.9);
+    }
+
+    &__button--dislike:hover{
+        background:rgba($red, 0.2rem); 
+        cursor: pointer;
+    }
+
+    &__button--dislike:active{
+        transform: scale(.9);
+    }
+
+    &__icon--dislike{
+        height: 5rem;
+        width: 5rem;
+        fill: $red;
+    }
+
+    &__icon--like{
+        height: 4rem;
+        width: 4rem;
+        fill: $green;
+    }
+}

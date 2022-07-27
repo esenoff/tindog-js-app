@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <button class="header__button--user">
+                <svg class="header__icon--user">
+                   <use xlink:href="images/sprite.svg#icon-user"></use>
+                </svg>
+             </button>
+             <button class="header__button">
+                <svg class="header__icon--paw">
+                   <use xlink:href="images/sprite.svg#icon-paw"></use>
+                </svg>
+             </button>
+             <button class="header__button--chat">
+                <svg class="header__icon--chat">
+                   <use xlink:href="images/sprite.svg#icon-comments"></use>
+                </svg>
+             </button>
+        </div>
+
+        <div class="content">
+            <img src="images/dog-teddy.jpg" alt="Dog image" class="content__main">
+            <img src="images/badge-like.png" alt="Like badge" class="content__badge">
+            <h2 class="content__name">Teddy, 30</h2>
+            <p class="content__about">How you doin?</p>
+        </div>
+
+        <div class="footer">
+            <button class="footer__button--dislike">
+                <svg class="footer__icon--dislike">
+                   <use xlink:href="images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <button class="footer__button--like">
+                <svg class="footer__icon--like">
+                   <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
