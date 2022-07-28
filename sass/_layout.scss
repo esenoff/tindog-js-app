@@ -27,6 +27,7 @@
     &__icon--paw{
         height: 2rem;
         fill: $white;
+        z-index: 100;
     }
 
     &__button--user,
@@ -47,18 +48,18 @@
     }
 }
 
-.content{
+#content{
     position: relative;
     padding-left: 2rem;
     padding-right: 1.2rem;
 
-    &__main{
+    .main{
         width: 98%;
         height: 65vh;
         border-radius: 1rem;
     }
 
-    &__badge{
+    .badge{
         width: 30%;
         height: 15%;
         position: absolute;
@@ -67,14 +68,14 @@
         transform: rotate(320deg);
     }
 
-    &__name{
+    .name{
         position: absolute;
         left: 3rem;
         bottom: 5rem;
         font-size: 2.2rem;
     }
 
-    &__about{
+    .about{
         position: absolute;
         left: 3rem;
         bottom: 2rem;

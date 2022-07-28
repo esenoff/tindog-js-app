@@ -41,7 +41,8 @@ body {
     cursor: pointer; }
   .header__icon--paw {
     height: 2rem;
-    fill: #fff; }
+    fill: #fff;
+    z-index: 100; }
   .header__button--user, .header__button--chat {
     height: 3rem;
     width: 3rem;
@@ -54,27 +55,27 @@ body {
     height: 100%;
     fill: #DCE1E7; }
 
-.content {
+#content {
   position: relative;
   padding-left: 2rem;
   padding-right: 1.2rem; }
-  .content__main {
+  #content .main {
     width: 98%;
     height: 65vh;
     border-radius: 1rem; }
-  .content__badge {
+  #content .badge {
     width: 30%;
     height: 15%;
     position: absolute;
     top: 4rem;
     left: 3rem;
     transform: rotate(320deg); }
-  .content__name {
+  #content .name {
     position: absolute;
     left: 3rem;
     bottom: 5rem;
     font-size: 2.2rem; }
-  .content__about {
+  #content .about {
     position: absolute;
     left: 3rem;
     bottom: 2rem;
